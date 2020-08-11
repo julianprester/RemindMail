@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_content_text">Touch to open app.</string>
+    <string name="notification_content_title">Send reminder to\u0020</string>
+    <string name="notification_reply_button">Send reminder</string>
+    <string name="notification_reply_text">Send reminder email</string>
+</resources>

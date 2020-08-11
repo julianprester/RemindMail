@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RemindMail</string>
+    <string name="edit_text_hint">Write your reminder here…</string>
+
+    <string name="channel_name">RemindMail Notifications</string>
+    <string name="channel_description">This notification channel provides notifications for the RemindMail app</string>
+</resources>

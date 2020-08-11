@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_key_recipient" translatable="false">pref_recipient</string>
+    <string name="settings_key_sender" translatable="false">pref_sender</string>
+    <string name="settings_key_subject" translatable="false">pref_subject</string>
+    <string name="settings_key_subject_line" translatable="false">pref_subject_line</string>
+    <string name="settings_key_notification" translatable="false">pref_notification</string>
+    <string name="settings_key_on_boot" translatable="false">pref_on_boot</string>
+    <string name="settings_key_server" translatable="false">pref_server</string>
+    <string name="settings_key_port" translatable="false">pref_port</string>
+    <string name="settings_key_security" translatable="false">pref_security</string>
+    <string name="settings_key_auth" translatable="false">pref_auth</string>
+    <string name="settings_key_username" translatable="false">pref_username</string>
+    <string name="settings_key_password" translatable="false">pref_password</string>
+
+    <bool name="settings_default_subject">true</bool>
+    <bool name="settings_default_notification">false</bool>
+    <bool name="settings_default_on_boot">false</bool>
+    <string name="settings_default_port" translatable="false">465</string>
+    <bool name="settings_default_auth">true</bool>
+
+    <string-array name="settings_list_security_values" translateable="false">
+        <item>none</item>
+        <item>ssltls</item>
+        <item>ssltlsall</item>
+        <item>starttls</item>
+        <item>starttlsall</item>
+    </string-array>
+
+    <string name="settings_list_security_ssltls">ssltls</string>
+    <string name="settings_list_security_starttls">starttls</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Categories -->
+    <string name="settings_category_send">Send settings</string>
+    <string name="settings_category_login">Email login</string>
+
+    <!-- Titles -->
+    <string name="settings_title_recipient">Recipient email</string>
+    <string name="settings_title_sender">Sender email</string>
+    <string name="settings_title_subject">Email in body</string>
+    <string name="settings_title_subject_line">Fixed subject line</string>
+    <string name="settings_title_notification">Enable notification</string>
+    <string name="settings_title_on_boot">Enable on startup</string>
+    <string name="settings_title_server">SMTP Server</string>
+    <string name="settings_title_port">Port</string>
+    <string name="settings_title_security">Security type</string>
+    <string name="settings_title_auth">Require signin</string>
+    <string name="settings_title_username">Username</string>
+    <string name="settings_title_password">Password</string>
+
+    <!-- Descriptions -->
+    <string name="settings_desc_subject">Send message in the body of the email</string>
+    <string name="settings_desc_notification">Allow sending reminders through a notification</string>
+    <string name="settings_desc_on_boot">Show the notification on startup of your phone</string>
+    <string name="settings_desc_auth">Server requires authentication</string>
+
+    <!-- Defaults -->
+    <string name="settings_default_recipient">Your reminders will be delivered to this email address</string>
+    <string name="settings_default_sender">This email address will appear as the sender</string>
+    <string name="settings_default_subject_line">[RemindMail]</string>
+    <string name="settings_default_server">Your SMTP server address</string>
+    <string name="settings_default_security">SSL/TLS</string>
+    <string name="settings_default_username">Your email login username</string>
+    <string name="settings_default_password">Your email login password</string>
+
+    <!-- List entries -->
+    <string-array name="settings_list_security_entries">
+        <item>None</item>
+        <item>SSL/TLS</item>
+        <item>SSL/TLS (Accept all certificates)</item>
+        <item>STARTTLS</item>
+        <item>STARTTLS (Accept all certificates)</item>
+    </string-array>
+
+</resources>

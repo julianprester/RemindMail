@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="@string/settings_category_send"
+        app:iconSpaceReserved="false">
+
+        <EditTextPreference
+            android:key="@string/settings_key_recipient"
+            android:title="@string/settings_title_recipient"
+            android:defaultValue="@string/settings_default_recipient"
+            android:inputType="textEmailAddress"
+            app:iconSpaceReserved="false" />
+
+        <EditTextPreference
+            android:key="@string/settings_key_sender"
+            android:title="@string/settings_title_sender"
+            android:defaultValue="@string/settings_default_sender"
+            android:inputType="textEmailAddress"
+            app:iconSpaceReserved="false" />
+
+        <CheckBoxPreference
+            android:key="@string/settings_key_subject"
+            android:title="@string/settings_title_subject"
+            android:summary="@string/settings_desc_subject"
+            android:defaultValue="@bool/settings_default_subject"
+            app:iconSpaceReserved="false" />
+
+        <EditTextPreference
+            android:key="@string/settings_key_subject_line"
+            android:title="@string/settings_title_subject_line"
+            android:defaultValue="@string/settings_default_subject_line"
+            android:dependency="@string/settings_key_subject"
+            app:iconSpaceReserved="false" />
+
+        <CheckBoxPreference
+            android:key="@string/settings_key_notification"
+            android:title="@string/settings_title_notification"
+            android:summary="@string/settings_desc_notification"
+            android:defaultValue="@bool/settings_default_notification"
+            app:iconSpaceReserved="false" />
+
+        <CheckBoxPreference
+            android:key="@string/settings_key_on_boot"
+            android:title="@string/settings_title_on_boot"
+            android:summary="@string/settings_desc_on_boot"
+            android:defaultValue="@bool/settings_default_on_boot"
+            android:dependency="@string/settings_key_notification"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/settings_category_login"
+        app:iconSpaceReserved="false">
+
+        <EditTextPreference
+            android:key="@string/settings_key_server"
+            android:title="@string/settings_title_server"
+            android:defaultValue="@string/settings_default_server"
+            app:iconSpaceReserved="false" />
+
+        <EditTextPreference
+            android:key="@string/settings_key_port"
+            android:title="@string/settings_title_port"
+            android:defaultValue="@string/settings_default_port"
+            android:inputType="number"
+            app:iconSpaceReserved="false" />
+
+        <ListPreference
+            android:key="@string/settings_key_security"
+            android:title="@string/settings_title_security"
+            android:entries="@array/settings_list_security_entries"
+            android:entryValues="@array/settings_list_security_values"
+            android:defaultValue="@string/settings_default_security"
+            app:iconSpaceReserved="false" />
+
+        <CheckBoxPreference
+            android:key="@string/settings_key_auth"
+            android:title="@string/settings_title_auth"
+            android:summary="@string/settings_desc_auth"
+            android:defaultValue="@bool/settings_default_auth"
+            app:iconSpaceReserved="false" />
+
+        <EditTextPreference
+            android:key="@string/settings_key_username"
+            android:title="@string/settings_title_username"
+            android:defaultValue="@string/settings_default_username"
+            android:dependency="@string/settings_key_auth"
+            android:inputType="textEmailAddress"
+            app:iconSpaceReserved="false" />
+
+        <EditTextPreference
+            android:key="@string/settings_key_password"
+            android:title="@string/settings_title_password"
+            android:defaultValue="@string/settings_default_password"
+            android:dependency="@string/settings_key_auth"
+            android:inputType="textPassword"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
